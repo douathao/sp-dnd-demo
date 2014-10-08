@@ -14,10 +14,11 @@
 	     which this html file exists. -->
 	<script>
 		var dojoConfig = {
-			packages: [ { name: 'dnd', location: location.pathname.replace(/[^/]+$/, '\.') } ]
-		}
+			async: 1,
+			packages: [ { name: 'dnd', location: location.pathname.replace(/[^/]+$/, '.') } ]
+		};
 	</script>
-	<script src="http://downloads.dojotoolkit.org/release-1.10.1/dojo-release-1.10.1/dojo/dojo.js"></script>
+	<script src="//downloads.dojotoolkit.org/release-1.10.1/dojo-release-1.10.1/dojo/dojo.js"></script>
 	<script>
 		require([ "dojo/_base/lang", "dojo/_base/array", "dojo/query", "dojo/dom", "dojo/dom-class", "dojo/dnd/Target", "dijit/TitlePane", "dijit/form/Button", "dijit/form/ToggleButton", "dnd/util", "dojo/aspect", "dojo/topic", "dnd/data", "dojo/domReady!" ], function(lang, arrayUtil, query, dom, domClass, Target, TitlePane, Button, ToggleButton, util, aspect, topic, data){
 			// highlights available drop targets

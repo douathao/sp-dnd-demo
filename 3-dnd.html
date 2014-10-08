@@ -14,10 +14,11 @@
 	     which this html file exists. -->
 	<script>
 		var dojoConfig = {
-			packages: [ { name: 'dnd', location: location.pathname.replace(/[^/]+$/, '\.') } ]
-		}
+			async: 1,
+			packages: [ { name: 'dnd', location: location.pathname.replace(/[^/]+$/, '.') } ]
+		};
 	</script>
-	<script src="http://downloads.dojotoolkit.org/release-1.10.1/dojo-release-1.10.1/dojo/dojo.js"></script>
+	<script src="//downloads.dojotoolkit.org/release-1.10.1/dojo-release-1.10.1/dojo/dojo.js"></script>
 
 	<script>
 		require(["dojo/dom", "dojo/dnd/Target", "dijit/TitlePane", "dnd/util", "dnd/data", "dojo/domReady!" ], function(dom, Target, TitlePane, util, data){
